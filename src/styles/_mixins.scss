@@ -1,0 +1,83 @@
+// * CLEARFIX */
+//clear the float so it doesn’t mess around the content layouts
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// * HEADINGS */
+//declare the standard heading styles
+@mixin heading {
+}
+
+//declare each heading separately
+@mixin heading-1 {
+  @include heading;
+  //font-size / styling for h1
+}
+@mixin heading-2 {
+  @include heading;
+  //font-size / styling for h2
+}
+
+//usage example: h1 {@include heading-1}
+
+/*
+* MEDIA QUERIES MANAGER
+
+* 0-480px:       Phone
+* 480-600px:     Phone Landscape
+* 600-900px:     Tablet Portrait
+* 900-1200px:    PhoTablet Landscape
+* [1200 - 1800]  Is where normal styles apply
+* 1800px+:       Big Desktop
+
+* 1em-16px
+* to convert width in px to em: width/16 = ...em
+* example: 600px / 16px = 37.5em
+
+* ORDER: Base + typography > general layout + grid > page layout > components
+
+* $breakpoint argument ch oices:
+*  - phone
+*  - phone-land
+*  - tab-port
+*  - tab-land
+*  - big-desktop
+
+*/
+
+//? mixin that includes responsive design for all $breakpoints specified above
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 30em) /* 480px */ {
+      @content;
+    }
+  }
+  @if $breakpoint == phone-land {
+    @media (max-width: 37.5em) /* 600px */ {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) /* 900px */ {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) /* 1200px */ {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) /* 1800 */ {
+      @content;
+    }
+  }
+}

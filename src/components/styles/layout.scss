@@ -1,0 +1,38 @@
+//? general css - body, main, h1, h2, h3, p
+
+//* remove all padding and margin from elements & make all pseudo-elements inherit their parent's box-sizing
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  //* ensures that box-sizing property is passed down from parent element (body) to all children elements
+  box-sizing: inherit;
+}
+
+//* root font size is set in html selector
+//* set font to 10px to make it easier to convert px to rem in other selectors - 1rem = 10 pixels
+//* default font size is 16px, so to find % value for 16px: 10px/16px * 100% = 62.5%
+
+html {
+  font-size: 62.5%;
+
+  // //responsive
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+    overflow-x: hidden;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
