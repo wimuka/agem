@@ -1,22 +1,28 @@
 .nav {
-  color: $text-green;
-  background-color: $color-white;
+  color: $color-tertiary;
+  background-color: $color-secondary;
   height: 5rem;
   display: flex;
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
+  //   transition: all 0.2s;
 
   &__logo {
-    width: 5%;
+    width: 7rem;
   }
 
   &__links {
-    width: 22%;
+    width: 35rem;
+    text-align: center;
   }
   &__phone {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.5rem;
+  }
+
+  @include respond(phone-land) {
+    display: none;
   }
 }
 
@@ -26,19 +32,22 @@
   margin: 0;
 
   &__item {
-    text-decoration: none;
-    text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
     padding: 2%;
-    font-size: 12px;
+    font-size: 1.1rem;
   }
 }
 
-a {
-  color: $text-green;
-}
+.link-style {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-tertiary;
+  }
 
-a:link {
-  text-decoration: none;
+  &:hover {
+    color: $color-primary;
+  }
 }

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 
 // markup
 const IndexPage = () => {
@@ -8,6 +9,7 @@ const IndexPage = () => {
     <>
       <Layout>
         <Navbar />
+        <Header />
       </Layout>
     </>
   );
