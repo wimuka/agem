@@ -1,17 +1,10 @@
 .must-haves {
-  height: 110vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   background-color: $color-secondary;
   align-items: center;
-
-  @include respond(tab-large) {
-    height: 280vh;
-  }
-
-  @include respond(tab-port) {
-    height: 260vh;
-  }
+  padding-bottom: 10rem;
 
   &__container {
     width: 90%;
@@ -25,15 +18,17 @@
   }
 
   &__item {
-    text-align: center;
-    background-color: $off-white;
     width: 25rem;
-    margin: 4rem;
-    padding: 1rem;
-    border-radius: 0.7rem;
-    font-size: 1.3rem;
-
     text-align: center;
+    font-size: 1.3rem;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: $off-white;
+    border-radius: 0.7rem;
+
+    &:last-child {
+      margin-bottom: 8rem;
+    }
 
     @include respond(tab-large) {
       width: 25rem;
