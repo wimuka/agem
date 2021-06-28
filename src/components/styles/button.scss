@@ -6,19 +6,43 @@
     text-transform: uppercase;
     display: inline-block;
     border-radius: 0.5rem;
-    padding: 1rem 4rem;
-    font-size: 1.3rem;
     transition: all 0.2s;
-  }
-
-  &:hover {
-    background-color: $color-tertiary;
-    box-shadow: 0 1rem 2rem rgba($color-tertiary, 0.2);
   }
 
   &--green {
     background-color: $color-primary;
     color: $color-secondary;
+    padding: 1rem 4rem;
+    font-size: 1.3rem;
+
+    &:hover {
+      background-color: $color-tertiary;
+      box-shadow: 0 1rem 2rem rgba($color-tertiary, 0.2);
+    }
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  &--light {
+    background-color: $light-green;
+    color: $color-tertiary;
+    font-weight: 700;
+    width: 90%;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    margin: 2rem 0;
+
+    @include respond(tab-land) {
+      font-size: 1.3rem;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      color: $off-white;
+      box-shadow: 0 1rem 2rem rgba($color-tertiary, 0.2);
+    }
 
     &::after {
       background-color: $color-primary;

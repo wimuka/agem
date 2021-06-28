@@ -1,0 +1,48 @@
+.must-haves {
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-secondary;
+  align-items: center;
+
+  @include respond(tab-large) {
+    height: 280vh;
+  }
+
+  @include respond(tab-port) {
+    height: 260vh;
+  }
+
+  &__container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    @include respond(tab-large) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    background-color: $off-white;
+    width: 25rem;
+    margin: 4rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    font-size: 1.3rem;
+
+    text-align: center;
+
+    @include respond(tab-large) {
+      width: 25rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__text {
+    color: $color-tertiary;
+    font-weight: 700;
+  }
+}

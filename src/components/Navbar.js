@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav className='nav'>
         <div className='nav__logo'>
           <Link to='/#home'>
-            <StaticImage src='../images/agem-logo.svg' />
+            <StaticImage src='../images/agem-logo.svg' alt='AGEM Logo' />
           </Link>
         </div>
         <div className='nav__links'>

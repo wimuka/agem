@@ -22,6 +22,7 @@ const Header = () => {
             <StaticImage
               src='../images/header-img.png'
               className='header__img'
+              alt='Header Image'
             />
           </div>
         </div>
