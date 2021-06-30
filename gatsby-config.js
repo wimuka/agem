@@ -1,5 +1,9 @@
 module.exports = {
   plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -9,10 +13,6 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -20,6 +20,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
       __key: 'images',
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /svg/,
+        },
+      },
     },
   ],
 };

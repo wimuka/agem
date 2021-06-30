@@ -41,4 +41,23 @@ module.exports = {
       file: 'agem-pink_mosturizer.png',
     },
   ],
+
+  features: [
+    {
+      text: 'Cruelty Free',
+      file: 'cruelty-free.png',
+    },
+    {
+      text: 'Plant Based',
+      file: 'plant-based.png',
+    },
+    {
+      text: 'Affordable',
+      file: 'savings.png',
+    },
+    {
+      text: 'Sustainable',
+      file: 'sustainable.png',
+    },
+  ],
 };

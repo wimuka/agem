@@ -7,11 +7,11 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <Head />
-      <body>
+      <div id='root'>
         <div id='content' className='container'>
           {children}
         </div>
-      </body>
+      </div>
     </Fragment>
   );
 };
