@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import MustHaves from '../components/MustHaves';
 import Features from '../components/Features';
+import BlogPicks from '../components/BlogPicks';
 
 // markup
 const IndexPage = () => {
@@ -15,6 +16,7 @@ const IndexPage = () => {
           <Header />
           <MustHaves />
           <Features />
+          <BlogPicks />
         </main>
       </Layout>
     </>

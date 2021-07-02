@@ -1,0 +1,50 @@
+.blog-picks {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include respond(tab-large) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 3rem;
+    color: $color-tertiary;
+    overflow: hidden;
+
+    @include respond(tab-large) {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+    }
+
+    &--bottom {
+      display: flex;
+      flex-direction: column;
+      background-color: $light-green;
+      height: 10rem;
+      padding: 1rem 2rem;
+      justify-content: center;
+    }
+  }
+
+  &__text {
+    font-family: 'Belleza';
+    font-size: 1.4rem;
+    padding-bottom: 1.5rem;
+  }
+
+  &__btn {
+  }
+}

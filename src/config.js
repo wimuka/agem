@@ -60,4 +60,23 @@ module.exports = {
       file: 'sustainable.png',
     },
   ],
+
+  blogPicks: [
+    {
+      text: 'What to order for your skincare routine?',
+      file: 'what-to-order.jpg',
+    },
+    {
+      text: 'Everything you need to know about serums',
+      file: 'serum-info.jpg',
+    },
+    {
+      text: 'Refer a friend: Give $25, Get $25',
+      file: 'refer-friend.jpg',
+    },
+    {
+      text: 'Jade Rolling vs Facial Gua Sha: Which is right for you?',
+      file: 'skin-tools.jpg',
+    },
+  ],
 };
