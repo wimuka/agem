@@ -2,6 +2,8 @@ import React from 'react';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { useImageQuery } from '../useImageQuery';
 import { blogPicks } from '../config.js';
+import Arrow from '../images/svg/arrow.svg';
+
 import './styles/blog-picks.scss';
 import './styles/typography.scss';
 
@@ -34,8 +36,11 @@ const BlogPicks = () => {
               </div>
               <div className='blog-picks__item--bottom'>
                 <p className='blog-picks__text'>{text}</p>
-                <a href={`#/products/${text}`} className='btn'>
-                  Read Now &rarr
+                <a
+                  href={`#/blog/${text}`}
+                  className='btn btn--text blog-picks__btn'
+                >
+                  Read Now <Arrow className='blog-picks__arrow' />
                 </a>
               </div>
             </div>

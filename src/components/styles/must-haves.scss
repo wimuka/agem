@@ -11,9 +11,17 @@
     display: flex;
     justify-content: center;
 
+    @include respond(tab-land) {
+      width: 80%;
+    }
     @include respond(tab-large) {
-      flex-direction: column;
-      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    @include respond(phone-large) {
+      flex-wrap: wrap;
+      width: 90%;
+      align-content: center;
     }
   }
 

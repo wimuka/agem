@@ -5,28 +5,44 @@
   align-items: center;
 
   &__container {
-    width: 90%;
+    width: 70%;
     display: flex;
     justify-content: center;
-  }
+    font-size: 1.5rem;
 
-  @include respond(tab-large) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    @include respond(tab-land) {
+      width: 80%;
+    }
+    @include respond(tab-large) {
+      flex-wrap: wrap;
+    }
 
+    @include respond(phone-large) {
+      flex-wrap: wrap;
+      width: 90%;
+      align-content: center;
+    }
+  }
   &__item {
     display: flex;
     flex-direction: column;
     width: 25%;
-    margin: 3rem;
+    margin: 1rem;
     color: $color-tertiary;
-    overflow: hidden;
+    box-shadow: 0.3rem 0.3rem 0.8rem rgba($color-tertiary, 0.3);
 
+    @include respond(tab-land) {
+      margin: 2rem 1rem;
+    }
     @include respond(tab-large) {
-      display: flex;
-      flex-direction: column;
-      width: 75%;
+      margin: 2rem 3rem;
+      width: 40%;
+    }
+    @include respond(phone-large) {
+      width: 60%;
+    }
+    @include respond(phone) {
+      width: 80%;
     }
 
     &--bottom {
@@ -35,16 +51,29 @@
       background-color: $light-green;
       height: 10rem;
       padding: 1rem 2rem;
-      justify-content: center;
+      justify-content: space-between;
     }
   }
 
   &__text {
     font-family: 'Belleza';
-    font-size: 1.4rem;
-    padding-bottom: 1.5rem;
+    margin: 0.3rem 0;
+    font-size: 1.6rem;
+
+    @include respond(tab-large) {
+      font-size: 2rem;
+    }
   }
 
   &__btn {
+    width: 8rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: $color-tertiary;
+  }
+
+  &__arrow {
+    width: 1rem;
+    height: 1rem;
   }
 }
