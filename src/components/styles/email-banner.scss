@@ -20,9 +20,16 @@
     background: transparent;
     border: none;
     border-bottom: $color-secondary solid 1px;
+    transition: all 0.1s;
 
     @include respond(phone) {
       width: 25rem;
+      border-bottom: $color-secondary solid 1px;
+    }
+
+    &:focus {
+      transform: translateY(3px);
+      border-bottom: $color-primary solid 2px;
     }
   }
 
@@ -31,4 +38,11 @@
     height: 2rem;
     margin-left: 1rem;
   }
+}
+
+button {
+  background: transparent;
+  outline: none;
+  border: 1px solid transparent;
+  cursor: pointer;
 }

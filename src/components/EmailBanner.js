@@ -11,12 +11,13 @@ const EmailBanner = () => {
       <form className='email-banner__container'>
         <input
           className='email-banner__input'
-          type='Email Address'
-          placeholder='Email Adress'
+          type='email'
+          placeholder='Email Address'
+          title='Add your email address'
         />
-        <a href='#signup'>
+        <button className='btn' type='submit'>
           <Arrow className='email-banner__arrow' />
-        </a>
+        </button>
       </form>
     </section>
   );
