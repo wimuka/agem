@@ -1,0 +1,34 @@
+.email-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  background-color: $light-green;
+
+  &__header {
+    font-family: 'Belleza';
+  }
+
+  &__container {
+    display: flex;
+    margin-bottom: 5rem;
+  }
+
+  &__input {
+    width: 40rem;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: $color-secondary solid 1px;
+
+    @include respond(phone) {
+      width: 25rem;
+    }
+  }
+
+  &__arrow {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+  }
+}

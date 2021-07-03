@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import MustHaves from '../components/MustHaves';
 import Features from '../components/Features';
 import BlogPicks from '../components/BlogPicks';
+import EmailBanner from '../components/EmailBanner';
 
 // markup
 const IndexPage = () => {
@@ -17,6 +18,7 @@ const IndexPage = () => {
           <MustHaves />
           <Features />
           <BlogPicks />
+          <EmailBanner />
         </main>
       </Layout>
     </>
