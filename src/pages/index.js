@@ -6,6 +6,7 @@ import MustHaves from '../components/MustHaves';
 import Features from '../components/Features';
 import BlogPicks from '../components/BlogPicks';
 import EmailBanner from '../components/EmailBanner';
+import Reviews from '../components/Reviews';
 
 // markup
 const IndexPage = () => {
@@ -19,6 +20,7 @@ const IndexPage = () => {
           <Features />
           <BlogPicks />
           <EmailBanner />
+          <Reviews />
         </main>
       </Layout>
     </>
