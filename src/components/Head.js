@@ -7,7 +7,7 @@ const Head = () => {
       <Helmet title='AGEM'>
         <html lang='en' />
         <link
-          href='https://fonts.googleapis.com/css2?family=Roboto:wght@300,400;700'
+          href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700'
           rel='stylesheet'
         />
         <link

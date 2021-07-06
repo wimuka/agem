@@ -1,4 +1,6 @@
 import React from 'react';
+import Star from '../images/svg/ios-star.svg';
+import { reviews } from '../config';
 
 import './styles/reviews.scss';
 import './styles/typography.scss';
@@ -9,14 +11,24 @@ const Reviews = () => {
       <section className='reviews'>
         <h1 className='heading-large'>Reviews</h1>
         <div className='reviews__container'>
-          <div className='reviews__item'>
-            <p className='reviews__name'>Hana Bole</p>
-            <p className='reviews__text'>
-              The lime and coconut cleansing water and Rosehip day cream swell
-              wondrfull and feel great on my skin, some night cream will be my
-              next purchase, I'm so pleased I found your skincare product...
-            </p>
-          </div>
+          {reviews.map(({ name, text, date }, index) => (
+            <div className='reviews__item'>
+              <p className='reviews__name'>{name}</p>
+              <p className='reviews__text'>{text}</p>
+              <div className='reviews__rating-container'>
+                <div>
+                  <Star className='reviews__star' />
+                  <Star className='reviews__star' />
+                  <Star className='reviews__star' />
+                  <Star className='reviews__star' />
+                  <Star className='reviews__star' />
+                </div>
+                <div>
+                  <p className='reviews__date'>{date}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </>

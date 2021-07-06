@@ -79,4 +79,27 @@ module.exports = {
       file: 'skin-tools.jpg',
     },
   ],
+
+  reviews: [
+    {
+      name: 'Hana Bole',
+      text: "The lime and coconut cleansing water and Rosehip day cream swell wondrfull and feel great on my skin, some night cream will be my next purchase, I'm so pleased I found your skincare product.",
+      date: '2 months ago',
+    },
+    {
+      name: 'Violet Smith',
+      text: 'I have very sensitive skin so I was apprehensive when looking at the products on the website. Many times I have purchased facial products claiming to be id...',
+      date: '5 days ago',
+    },
+    {
+      name: 'Lee Johnson',
+      text: "I have fairly sensitive skin and have been looking for something natural, but also easy on my skin. I've been using the Magic Serum for a month and my skin i...",
+      date: '1 year ago',
+    },
+    {
+      name: 'Joan Barbar',
+      text: "Smells beautiful and doesn't irritate my skin at all!",
+      date: '25 days ago',
+    },
+  ],
 };
