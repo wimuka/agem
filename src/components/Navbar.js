@@ -25,7 +25,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='nav__phone-box'>
-          <p className='nav__phone'>705-977-3303</p>
+          <p className='nav__phone'>912-231-112*</p>
         </div>
       </nav>
     </>

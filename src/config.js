@@ -88,7 +88,7 @@ module.exports = {
     },
     {
       name: 'Violet Smith',
-      text: 'I have very sensitive skin so I was apprehensive when looking at the products on the website. Many times I have purchased facial products claiming to be id...',
+      text: 'I have very sensitive skin so I was apprehensive when looking at the products on the website. Many times I have purchased facial products claiming to be ideal for my skin issues. You gues...',
       date: '5 days ago',
     },
     {
