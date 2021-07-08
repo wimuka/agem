@@ -7,6 +7,7 @@ import Features from '../components/Features';
 import BlogPicks from '../components/BlogPicks';
 import EmailBanner from '../components/EmailBanner';
 import Reviews from '../components/Reviews';
+import Footer from '../components/Footer';
 
 // markup
 const IndexPage = () => {
@@ -21,6 +22,7 @@ const IndexPage = () => {
           <BlogPicks />
           <EmailBanner />
           <Reviews />
+          <Footer />
         </main>
       </Layout>
     </>
