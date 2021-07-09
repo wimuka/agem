@@ -19,6 +19,7 @@
   }
   @include respond(tab-medium) {
     height: 60vh;
+    background-image: url(../../images/hero-img-mobile.jpg);
   }
 
   @include respond(phone-large) {
