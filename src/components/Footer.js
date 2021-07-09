@@ -13,21 +13,21 @@ const Footer = () => {
             <p className='footer__subscribe--middle'>
               Sign up for the latest and greatest in AGEM news!
             </p>
-            <form className='subscribe-form'>
+            <form className='footer__subscribe-form'>
               <input
-                className='subscribe-form__input'
+                className='footer__subscribe-form--input'
                 type='email'
-                placeholder='Email Address'
+                placeholder='Enter email address and save 15%'
                 title='Add your email address'
               />
-              <button className='btn' type='submit'>
+              <button className='btn footer__subscribe-form__btn' type='submit'>
                 Subscribe
               </button>
             </form>
           </div>
           <div className='footer__contact'>
             <p className='footer__contact--bold'>Contact Us</p>
-            <p>912-231-112*</p>
+            <p className='footer__contact--phone'>1-912-231-112*</p>
             <p>info@agem.ca</p>
           </div>
           <div className='footer__links'>

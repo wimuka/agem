@@ -36,3 +36,16 @@ body {
   box-sizing: border-box;
   font-family: 'Roboto';
 }
+
+a {
+  color: $color-tertiary;
+  text-decoration: none;
+  margin-bottom: 1rem;
+
+  @include respond(tab-large) {
+    margin-right: 1.5rem;
+  }
+  @include respond(tab-small) {
+    margin-right: 1.5rem;
+  }
+}
