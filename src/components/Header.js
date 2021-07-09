@@ -23,6 +23,7 @@ const Header = () => {
               src='../images/header-img.png'
               className='header__img'
               alt='Header Image'
+              width={460}
             />
           </div>
         </div>

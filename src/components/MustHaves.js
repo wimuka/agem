@@ -26,7 +26,6 @@ const MustHaves = () => {
                       image={image}
                       alt={`${name}'s Photo`}
                       key={`${index}+1`}
-                      layout='constrained'
                     />
                   );
                 } else return null;
