@@ -32,14 +32,26 @@ const Footer = () => {
           </div>
           <div className='footer__links'>
             <div className='footer__links--left'>
-              <a href='#about'>About Us</a>
-              <a href='#blog'>Blog</a>
-              <a href='#rewards'>Rewards</a>
+              <a className='footer__links--a' href='#about'>
+                About Us
+              </a>
+              <a className='footer__links--a' href='#blog'>
+                Blog
+              </a>
+              <a className='footer__links--a' href='#rewards'>
+                Rewards
+              </a>
             </div>
             <div className='footer__links--right'>
-              <a href='#faq'>FAQ</a>
-              <a href='#ship-info'>Shipping Info</a>
-              <a href='#return'>Return Policy</a>
+              <a className='footer__links--a' href='#faq'>
+                FAQ
+              </a>
+              <a className='footer__links--a' href='#ship-info'>
+                Shipping Info
+              </a>
+              <a className='footer__links--a' href='#return'>
+                Return Policy
+              </a>
             </div>
           </div>
         </div>

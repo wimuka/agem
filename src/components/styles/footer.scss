@@ -19,6 +19,10 @@
     color: $color-tertiary;
     margin: 0 8rem;
 
+    @include respond(tab-port) {
+      font-size: 1.4rem;
+    }
+
     @include respond(tab-small) {
       flex-direction: column;
       font-size: 1.5rem;
@@ -33,9 +37,12 @@
     justify-content: center;
     margin-left: 10rem;
 
+    @include respond(tab-large) {
+      width: 41%;
+    }
+
     @include respond(tab-small) {
       width: 100%;
-      display: flex;
       align-items: center;
       margin-left: 0;
       margin-top: 2rem;
@@ -87,6 +94,10 @@
     justify-content: center;
     margin-bottom: 2rem;
 
+    @include respond(tab-large) {
+      width: 25%;
+    }
+
     @include respond(tab-small) {
       width: 100%;
 
@@ -111,9 +122,14 @@
     font-size: 1.3rem;
     font-weight: 700;
 
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
+
     @include respond(tab-small) {
       width: 100%;
       flex-direction: column;
+      align-items: center;
       font-size: 1.5rem;
       margin-right: 0;
     }
@@ -124,13 +140,15 @@
       margin-right: 10rem;
 
       @include respond(tab-large) {
-        margin-right: 0;
+        margin-right: 2rem;
       }
 
       @include respond(tab-small) {
         width: 70%;
-        flex-direction: row;
-        justify-content: center;
+        min-height: 6rem;
+        display: block;
+        text-align: center;
+        margin: auto 0;
       }
     }
 
@@ -138,10 +156,32 @@
       display: flex;
       flex-direction: column;
 
+      @include respond(tab-large) {
+        min-height: 5rem;
+      }
+
       @include respond(tab-small) {
         width: 100%;
-        flex-direction: row;
-        justify-content: center;
+        min-height: 6rem;
+        display: block;
+        text-align: center;
+        margin: auto 0;
+      }
+    }
+
+    &--a {
+      @include respond(tab-large) {
+        min-width: 4.8rem;
+      }
+
+      @include respond(tab-small) {
+        display: inline-block;
+        min-width: 6rem;
+        height: 100%;
+        text-align: center;
+        margin-left: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
       }
     }
   }
