@@ -15,8 +15,9 @@ const EmailBanner = () => {
           placeholder='Email Address'
           title='Add your email address'
         />
-        <button className='btn' type='submit'>
+        <button className='btn email-banner__btn' type='submit'>
           <Arrow className='email-banner__arrow' />
+          Sumbit
         </button>
       </form>
     </section>
