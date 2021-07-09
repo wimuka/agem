@@ -1,3 +1,5 @@
+@import './typography.scss';
+
 //? general css - body, main, h1, h2, h3, p
 
 //* remove all padding and margin from elements & make all pseudo-elements inherit their parent's box-sizing
@@ -35,6 +37,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Roboto';
+  font-weight: 400;
   font-display: swap;
 }
 
