@@ -16,10 +16,15 @@
 
   &__subscribe {
     margin-left: 10rem;
-  }
 
-  &__subscribe-form {
-    display: flex;
+    &--top {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    &--middle {
+      margin: 1rem 0;
+    }
   }
 
   &__contact {
@@ -48,6 +53,12 @@
 
   &__privacy {
   }
+}
+
+.subscribe-form {
+  width: 30rem;
+  background-color: lawngreen;
+  display: flex;
 }
 
 .copyright {

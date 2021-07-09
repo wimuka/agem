@@ -13,7 +13,7 @@ const Footer = () => {
             <p className='footer__subscribe--middle'>
               Sign up for the latest and greatest in AGEM news!
             </p>
-            <form className='subscribe-form__container'>
+            <form className='subscribe-form'>
               <input
                 className='subscribe-form__input'
                 type='email'
@@ -32,14 +32,14 @@ const Footer = () => {
           </div>
           <div className='footer__links'>
             <div className='footer__links--left'>
-              <a href='#'>About Us</a>
-              <a href='#'>Blog</a>
-              <a href='#'>Rewards</a>
+              <a href='#about'>About Us</a>
+              <a href='#blog'>Blog</a>
+              <a href='#rewards'>Rewards</a>
             </div>
             <div className='footer__links--right'>
-              <a href='#'>FAQ</a>
-              <a href='#'>Shipping Info</a>
-              <a href='#'>Return Policy</a>
+              <a href='#faq'>FAQ</a>
+              <a href='#ship-info'>Shipping Info</a>
+              <a href='#return'>Return Policy</a>
             </div>
           </div>
         </div>
