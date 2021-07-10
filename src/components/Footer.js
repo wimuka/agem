@@ -30,24 +30,26 @@ const Footer = () => {
             <p className='footer__contact--phone'>1-912-231-112*</p>
             <p>info@agem.ca</p>
           </div>
+
           <div className='footer__links'>
             <div className='footer__links--left'>
-              <a className='footer__links--a' href='#about'>
-                About Us
+              <a className='footer__links--a' href='#faq'>
+                FAQ
               </a>
               <a className='footer__links--a' href='#blog'>
                 Blog
               </a>
-              <a className='footer__links--a' href='#rewards'>
-                Rewards
+
+              <a className='footer__links--a' href='#ship-info'>
+                Shipping Info
               </a>
             </div>
             <div className='footer__links--right'>
-              <a className='footer__links--a' href='#faq'>
-                FAQ
+              <a className='footer__links--a' href='#rewards'>
+                Rewards
               </a>
-              <a className='footer__links--a' href='#ship-info'>
-                Shipping Info
+              <a className='footer__links--a' href='#about'>
+                About Us
               </a>
               <a className='footer__links--a' href='#return'>
                 Return Policy
