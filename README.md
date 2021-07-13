@@ -1,5 +1,8 @@
-## AGEM
-Concept website for a skincare brand called Agem. Created with **Gatsby.js** and **SASS** for styling.
+# AGEM
+
+### Concept website for a skincare brand 
+
+Created with **Gatsby.js** for frontend and **SASS** for styling.
 
 #### **Figma** Prototype
 
